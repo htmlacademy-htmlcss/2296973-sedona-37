@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-------------- main-header -------------->
-    <header class="main-header">
+    <header data-test="header" class="main-header">
         <nav class="navigation">
           <a href="index.html" class="logo">
             <img src="#" alt="Логотип гостинницы Седона">
@@ -55,7 +55,7 @@
 
 
     <!-------------- main-inner -------------->
-    <main class="main-inner">
+    <main data-test="main" class="main-inner">
         <header class="inner-header">
             <h1 class="inner-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
@@ -149,10 +149,13 @@
             </select>
 
             <a href="#" class="button button-light">
-              <span class="visually-hidden">Показать список</span>
+              <span class="visually-hidden">Показать списком</span>
             </a>
             <a class="button" href="#">
-              <span class="visually-hidden">Показать карточки</span>
+              <span class="visually-hidden">Показать на весь экран</span>
+            </a>
+            <a class="button" href="#">
+              <span class="visually-hidden">Показать таблицей</span>
             </a>
           </div>
 
@@ -160,7 +163,7 @@
           <ul class="product-list">
             <li class="product-cart">
               <a class="product-card-link" href="product.html">
-                <img src="#" alt="">
+                <img src="images/catalog/catalog-1.jpg" alt="">
                 <h3 class="product-card-title">Amara Resort & Spa</h3>
               </a>
               <p>
@@ -174,7 +177,7 @@
 
             <li class="product-cart">
               <a class="product-card-link" href="product.html">
-                <img src="#" alt="">
+                <img src="images/catalog/catalog-2.jpg" alt="">
                 <h3 class="product-card-title">Villas at Poco Diablo</h3>
               </a>
               <p>
@@ -188,7 +191,7 @@
 
             <li class="product-cart">
               <a class="product-card-link" href="product.html">
-                <img src="#" alt="">
+                <img src="images/catalog/catalog-3.jpg" alt="">
                 <h3 class="product-card-title">Desert Quail Inn</h3>
               </a>
               <p>
@@ -202,7 +205,7 @@
 
             <li class="product-cart">
               <a class="product-card-link" href="product.html">
-                <img src="#" alt="">
+                <img src="images/catalog/catalog-4.jpg" alt="">
                 <h3 class="product-card-title">GreenTree Inn</h3>
               </a>
               <p>
@@ -240,7 +243,7 @@
 
 
         <!-------------- section-mailing -------------->
-        <section class="mailing">
+        <section data-test="subscribe" class="mailing">
           <h2 class="mailing-title">Подпишитесь на рассылку</h2>
           <p class="mailing-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
 
@@ -259,21 +262,21 @@
 
 
     <!-------------- main-footer -------------->
-    <footer class="main-footer">
+    <footer data-test="footer" class="main-footer">
       <ul class="main-footer-list">
         <li class="main-footer-item">
           <a href="https://vk.com/htmlacademy">
-            <img src="#" alt="Vk">
+            <img src="images/social/vk.svg" alt="Vk">
           </a>
         </li>
         <li class="main-footer-item">
           <a href="https://t.me/htmlacademy">
-            <img src="#" alt="Telegram">
+            <img src="images/social/telegram.svg" alt="Telegram">
           </a>
         </li>
         <li class="main-footer-item">
           <a href="https://www.youtube.com/user/htmlacademyru">
-            <img src="#" alt="Youtube">
+            <img src="images/social/youtube.svg" alt="Youtube">
           </a>
         </li>
       </ul>
@@ -281,7 +284,7 @@
       <a class="main-footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
       <a href="https://htmlacademy.ru">
-        <img src="#" alt="Логотип HTMLacademy">
+        <img src="images/HTML Academy.svg" alt="Логотип HTMLacademy">
       </a>
     </footer>
     <!-------------- main-footer -------------->
