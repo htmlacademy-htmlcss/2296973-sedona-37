@@ -286,7 +286,8 @@ body {
 }
 
 .mailing {
-  background: url("../images/subscribe.jpg") no-repeat;
+  background-image: url("../images/subscribe.jpg");
+  background-repeat: no-repeat;
 }
 
 .mailing-title {
