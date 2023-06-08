@@ -286,7 +286,7 @@ body {
 }
 
 .mailing {
-  background-image: url("../images/subscribe.jpg");
+  background-image: url("../images/action.jpg");
   background-repeat: no-repeat;
 }
 
@@ -299,6 +299,7 @@ body {
 .mailing-subtitle {
   color: #fff;
 }
+
 /* mailing */
 
 
