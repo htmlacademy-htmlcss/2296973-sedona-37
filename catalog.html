@@ -31,7 +31,8 @@
 
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link search-icon" href="#">
+
                 <span class="visually-hidden">
                   Поиск
                 </span>
@@ -39,7 +40,7 @@
             </li>
 
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link favourites-icon" href="#">
                 <span class="visually-hidden">
                   Избранное
                 </span>
@@ -57,11 +58,16 @@
 
     <!-------------- main-inner -------------->
     <main data-test="main" class="main-inner">
+      <div class="inner-wrap">
         <header class="inner-header">
             <h1 class="inner-title">Гостиницы Седоны</h1>
             <ol class="breadcrumbs">
                 <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link" href="index.html"></a>
+                    <a class="breadcrumbs-link breadcrumbs-img" href="index.html">
+                      <span class="visually-hidden">
+                        Главная
+                      </span>
+                    </a>
                 </li>
                 <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link">Гостиницы</a>
@@ -135,6 +141,7 @@
             <button class="button" type="reset">Сбросить</button>
           </form>
         </section>
+      </div>
         <!-------------- form-products -------------->
 
 
@@ -144,18 +151,18 @@
 
           <div>
             <select class="select-control" aria-label="Сортировка">
-              <option value="popular">Сначала популярное</option>
-              <option value="cheap">Сначала дешёвое</option>
-              <option value="expensive">Сначала дорогое</option>
+              <option value="popular">Сначала популярные</option>
+              <option value="cheap" selected="selected">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
             </select>
 
-            <a href="#" class="button button-light">
+            <a href="#" class="button button-list">
               <span class="visually-hidden">Показать списком</span>
             </a>
-            <a class="button" href="#">
+            <a class="button button-fullscreen" href="#">
               <span class="visually-hidden">Показать на весь экран</span>
             </a>
-            <a class="button" href="#">
+            <a class="button button-table" href="#">
               <span class="visually-hidden">Показать таблицей</span>
             </a>
           </div>
@@ -164,7 +171,7 @@
           <ul class="product-list">
             <li class="product-cart">
               <a class="product-card-link" href="product.html">
-                <img src="images/catalog/catalog-1.jpg" alt="">
+                <img src="images/catalog/catalog-1.jpg" alt="Курортный отель Amara Resort & Spa">
                 <h3 class="product-card-title">Amara Resort & Spa</h3>
               </a>
               <p>
@@ -178,7 +185,7 @@
 
             <li class="product-cart">
               <a class="product-card-link" href="product.html">
-                <img src="images/catalog/catalog-2.jpg" alt="">
+                <img src="images/catalog/catalog-2.jpg" alt="Виллы в Поко Диабло">
                 <h3 class="product-card-title">Villas at Poco Diablo</h3>
               </a>
               <p>
@@ -192,7 +199,7 @@
 
             <li class="product-cart">
               <a class="product-card-link" href="product.html">
-                <img src="images/catalog/catalog-3.jpg" alt="">
+                <img src="images/catalog/catalog-3.jpg" alt="Гостиница Пустынный перепел">
                 <h3 class="product-card-title">Desert Quail Inn</h3>
               </a>
               <p>
@@ -206,7 +213,7 @@
 
             <li class="product-cart">
               <a class="product-card-link" href="product.html">
-                <img src="images/catalog/catalog-4.jpg" alt="">
+                <img src="images/catalog/catalog-4.jpg" alt="Гостиница Гринтри Инн">
                 <h3 class="product-card-title">GreenTree Inn</h3>
               </a>
               <p>
