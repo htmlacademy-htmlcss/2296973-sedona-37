@@ -33,6 +33,16 @@ body {
 
 }
 
+.search-icon {
+  background: url("../images/header/search.svg") no-repeat;
+
+}
+
+.favourites-icon {
+  background: url("../images/header/favourites.svg") no-repeat;
+
+}
+
 .navigation-item .button {
   font-weight: 700;
   font-size: 16px;
@@ -45,10 +55,18 @@ body {
 /* main-header */
 
 
+/* main-inner */
+.breadcrumbs-img {
+  background: url("../images/home.svg")  left  no-repeat;
+}
+/* main-inner */
+
 
 /* section-hero */
 .hero {
-  background: url("../images/full-image.jpg") no-repeat;
+  background: url("../images/decorative-element.png") bottom no-repeat,
+              url("../images/full-image.jpg") center no-repeat;
+
   width: 1200px;
   height: 485px;
   text-align: center;
@@ -126,19 +144,19 @@ body {
 
 
 
-/*
+
 .advantages-item:nth-child(1) {
-  background: url("../images/advantages/advantages-1.svg") top no-repeat;
+  background: url("../images/advantages/advantages-1.svg")  no-repeat;
 }
 
 .advantages-item:nth-child(2) {
-  background: url("../images/advantages/advantages-2.svg") top no-repeat;
+  background: url("../images/advantages/advantages-2.svg")  no-repeat;
 }
 
 .advantages-item:nth-child(3) {
-  background: url("../images/advantages/advantages-3.svg") top no-repeat;
+  background: url("../images/advantages/advantages-3.svg")  no-repeat;
 }
- */
+
 
 
 
@@ -150,6 +168,7 @@ body {
 .action-title {
   line-height: 36px;
   font-size: 30px;
+  text-transform: uppercase;
 }
 
 .action .button {
@@ -167,7 +186,7 @@ body {
 
 
 /* form-products */
-.form-products {
+.inner-wrap {
   background: url("../images/filter.jpg") no-repeat;
 }
 
@@ -199,6 +218,7 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  text-transform: uppercase;
 }
 
 
@@ -246,6 +266,29 @@ body {
   border-radius: 4px;
 }
 
+.select-control {
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #fff;
+}
+
+.button-list  {
+  background: url("../images/list.svg") left no-repeat;
+  text-decoration: none;
+}
+
+.button-fullscreen {
+  background: url("../images/full-screen.svg") left no-repeat;
+  text-decoration: none;
+}
+
+.button-table {
+  background: url("../images/table.svg") left no-repeat;
+  text-decoration: none;
+}
 
 
 /*products-section pagination */
@@ -302,6 +345,14 @@ body {
 
 /* mailing */
 
+/* main-footer */
+.main-footer-phone {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000;
+  text-decoration: none;
+}
+/* main-footer */
 
 /* mailing bg-hidden */
 .bg-hidden {
