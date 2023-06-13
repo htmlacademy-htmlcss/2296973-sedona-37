@@ -18,7 +18,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
-  background-color: #fff;
+  background-color: #F2F2F2;
   color: #333333;
 
 }
@@ -88,7 +88,7 @@ body {
 
 /* section-hero */
 .hero {
-  background-color: #000000;
+  background-color: #284155;
   background: url("../images/decorative-element.png") bottom no-repeat,
               url("../images/full-image.jpg") center no-repeat;
 
@@ -227,7 +227,7 @@ body {
 
 /* form-products */
 .inner-wrap {
-  background-color: #000;
+  background-color: #284155;
   background: url("../images/filter.jpg") no-repeat;
 }
 
@@ -382,7 +382,7 @@ body {
 }
 
 .mailing {
-  background-color: #000;
+  background-color: #284155;
   background: url("../images/action.jpg") no-repeat;
 
 }
