@@ -31,6 +31,12 @@ body {
 
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -49,6 +55,7 @@ body {
   width: 1200px;
   background-color: #fff;
   min-height: 100%;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 
 }
 
@@ -101,7 +108,7 @@ body {
 }
 
 .navigation-user .navigation-link {
-  padding: 22px 12px;
+  padding: 22px 23px;
   min-width: 16px;
   min-height: 22px;
 
@@ -234,13 +241,14 @@ body {
 
 .main-container {
   flex-grow: 1;
+
 }
 
 /* section-hero */
 .hero {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  padding: 51px 371px 82px 371px;
   align-items: center;
 
   background-color: #284155;
@@ -254,11 +262,6 @@ body {
   order: 1;
 }
 
-.hero-img {
-  padding-top: 51px;
-  order: -1;
-
-}
 /* section-hero */
 
 
