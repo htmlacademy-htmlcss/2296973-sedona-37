@@ -682,6 +682,7 @@ body {
 }
 
 .product-cart {
+
   list-style: none;
   padding: 20px;
   border: 1px solid #E6E6E6;
@@ -716,6 +717,10 @@ body {
   border-radius: 4px;
 }
 
+.button-select {
+  padding: 8px 18px;
+}
+
 .product-list span {
   font-size: 18px;
   line-height: 21px;
@@ -730,6 +735,12 @@ body {
   text-decoration: none;
   background: #756157;
   border-radius: 4px;
+  padding: 8px 26px;
+  margin-right: 20px;
+}
+
+.button-wrap {
+  display: flex;
 }
 
 .select-control {
@@ -805,6 +816,7 @@ body {
 .dots {
   text-decoration: none;
   padding: 11px 24px;
+  color: #000;
 }
 
 .pagination-link {
@@ -875,7 +887,9 @@ body {
 }
 
 .mailing-form {
-  width: 684px;
+  display: flex;
+  width: 682px;
+  justify-content: space-between;
 }
 
 .mailing-form .button{
@@ -884,8 +898,13 @@ body {
 }
 
 .field {
+
+  border: none;
   padding: 12px 20px;
+  width: 452px;
+  border-radius: 4px 0 0 4px;
 }
+
 
 /* mailing */
 
