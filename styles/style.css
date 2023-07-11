@@ -65,7 +65,7 @@ body {
   display: flex;
   align-items: center;
   width: 1200px;
-  height: 64px;
+  min-height: 64px;
 }
 
 .header-logo {
@@ -79,7 +79,6 @@ body {
   display: flex;
   align-items: center;
   width: 1066px;
-  height: 64px;
   margin: 0 auto;
 }
 .navigation-list {
@@ -94,6 +93,7 @@ body {
   display: flex;
   align-items: center;
   padding-left: 168px;
+  flex-wrap: wrap;
 
 }
 
@@ -234,7 +234,7 @@ body {
   line-height: 78px;
   color: #fff;
   margin: 0;
-  margin-top: 35px;
+
   margin-bottom: 8px;
 }
 /* main-inner */
@@ -326,6 +326,8 @@ body {
 
 .about-img {
   display: block;
+  object-fit: cover;
+  height: 100%;
 }
 
 
@@ -562,6 +564,10 @@ body {
   font-weight: 700;
   color: #fff;
   margin-bottom: 32px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
 }
 
 .catalog-filter-group {
@@ -602,6 +608,8 @@ body {
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
+  font-weight: 700;
+  font-family: PT Sans;
 }
 
 
@@ -640,26 +648,23 @@ body {
   margin: 0;
   margin-right: auto;
   text-transform: uppercase;
-  width: 338px;
 
 }
-.select-control-wrap .button {
-  display: block;
-}
 
 
-.select-control-wrap {
-  display: flex;
-  width: 522px;
-  justify-content: space-between;
 
-}
+
 
 .select-control-btn-wrap {
   display: flex;
-  width: 160px;
-  justify-content: space-between;
   gap: 8px;
+
+}
+
+.select-control-btn-wrap .button {
+  display: block;
+  width: 48px;
+  height: 48px;
 }
 
 .select-control-btn-wrap .button {
@@ -671,20 +676,22 @@ body {
 }
 
 .product-list {
-  margin: 0 auto;
-  padding: 0;
+  padding: 0 70px;
   display: grid;
-  grid-template-columns: repeat(3, 340px);
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 20px;
-  width: 1060px;
+  margin: 0;
   margin-bottom: 80px;
 
 }
 
 .product-cart {
-
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows: 212px 1fr;
   list-style: none;
-  padding: 20px;
+  padding: 19px;
+  gap: 16px 20px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
 }
@@ -696,6 +703,21 @@ body {
   line-height: 28px;
   text-decoration: none;
 }
+
+.product-card-img {
+  display: block;
+  object-fit: contain;
+  grid-column: 2 span;
+}
+
+ .product-card-title {
+  grid-column: 2 span;
+  margin: 0;
+ }
+
+ .product-card-price {
+  justify-self: end;
+ }
 
 .product-cart .button {
   font-size: 16px;
@@ -718,8 +740,11 @@ body {
 }
 
 .button-select {
+  font-family: PT Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
   padding: 8px 18px;
-}
+  }
 
 .product-list span {
   font-size: 18px;
@@ -736,7 +761,7 @@ body {
   background: #756157;
   border-radius: 4px;
   padding: 8px 26px;
-  margin-right: 20px;
+
 }
 
 .button-wrap {
@@ -748,9 +773,14 @@ body {
   border-radius: 4px;
   font-size: 18px;
   line-height: 21px;
+  font-style: normal;
+  font-weight: 400;
   color: #333333;
   background-color: #fff;
-  margin-right: 70px;
+  margin-right: auto;
+  align-self: stretch;
+  padding: 4px 99px 4px 20px;
+  font-family: PT Sans;
 }
 
 .button-list  {
@@ -776,12 +806,20 @@ body {
 
 
 
-/*products-section rating */
-
-.rating {
-	display: inline-block;
-	font-size: 0;
+.rating-content {
+  margin: 0;
+  border-radius: 4px;
+  padding: 8px 22px;
+  background: #F2F2F2;
 }
+
+
+
+/*products-section rating */
+.rating {
+  align-self: center;
+}
+
 .rating span {
 	padding: 0;
 	font-size: 20px;
@@ -802,20 +840,22 @@ body {
 /*products-section pagination */
 .pagination {
   display: flex;
-  width: 1060px;
-  margin: 0 auto;
-  padding: 0;
+  margin: 0;
+  gap: 8px;
+  padding: 0 70px;
 }
 .pagination-item {
+  display: flex;
   list-style: none;
-  margin-right: 8px;
+
+
 }
 .pagination-item:last-child {
   margin-right: 0;
 }
 .dots {
   text-decoration: none;
-  padding: 11px 24px;
+  padding: 16px 22px;
   color: #000;
 }
 
@@ -829,6 +869,9 @@ body {
   text-decoration: none;
   padding: 11px 24px;
 
+}
+.padding-block {
+  padding: 11px 18px 12px 18px;
 }
 
 .pagination-current {
@@ -894,15 +937,16 @@ body {
 
 .mailing-form .button{
   padding: 8px 50px;
-  border-radius: 4px;
+  border-radius: 0 4px 4px 0;
 }
 
 .field {
 
   border: none;
   padding: 12px 20px;
-  width: 452px;
+  flex-grow: 1;
   border-radius: 4px 0 0 4px;
+  background:#F2F2F2;
 }
 
 
