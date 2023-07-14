@@ -45,6 +45,7 @@
                   <span class="visually-hidden">
                     Избранное
                   </span>
+                  <span class="navigation-object">12</span>
                 </a>
               </li>
 
@@ -88,22 +89,21 @@
                     <li class="catalog-filter-item">
                       <label class="control">
                         <input class="control-input" type="checkbox" name="Swimming-pool" checked>
-                        Бассейн
+                        <span class="control-label">Бассейн</span>
 
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
                         <input class="control-input" type="checkbox" name="Parking" checked>
-
-                        Парковка
+                        <span class="control-label">Парковка</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
                         <input class="control-input" type="checkbox" name="Wi-Fi">
+                        <span class="control-label">Wi-Fi</span>
 
-                        Wi-Fi
                       </label>
                     </li>
                   </ul>
@@ -137,9 +137,39 @@
                 </fieldset>
               </div>
 
-              <div class="products-btn-wrap">
-                <button class="button products-btn-bg" type="submit">Применить</button>
-                <button class="button products-btn" type="reset">Сбросить</button>
+              <div class="filter-price-wrap">
+                <fieldset class="catalog-filter-group">
+                  <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                  <div class="range">
+                    <div class="range-wrapper-inputs">
+                      <label class="catalog-filter-label">
+                         <input class="range-input" type="number" value="0" name="min-price"> <span>от</span>
+                      </label>
+                      <label class="catalog-filter-label">
+                         <input class="range-input" type="number" value="9000" name="max-price">
+                         <span>до</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 228px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+
+                </fieldset>
+
+
+                <div class="products-btn-wrap">
+                  <button class="button products-btn-bg" type="submit">Применить</button>
+                  <button class="button products-btn" type="reset">Сбросить</button>
+                </div>
               </div>
             </form>
           </section>
@@ -165,7 +195,7 @@
                   <a class="button button-fullscreen" href="#">
                     <span class="visually-hidden">Показать на весь экран</span>
                   </a>
-                  <a href="#" class="button button-list">
+                  <a class="button button-list" href="#">
                     <span class="visually-hidden">Показать списком</span>
                   </a>
                 </div>
@@ -177,8 +207,8 @@
               <li class="product-cart">
                 <a class="product-card-link" href="product.html">
                   <img class="product-card-img" src="images/catalog/catalog-1.jpg" width="300" height="212" alt="Курортный отель Amara Resort & Spa">
+                  <h3 class="product-card-title">Amara Resort & Spa</h3>
                 </a>
-                <h3 class="product-card-title">Amara Resort & Spa</h3>
 
                 <span class="product-card-type">Гостиница</span>
                 <span class="product-card-price">От 4000 ₽</span>
@@ -204,8 +234,8 @@
               <li class="product-cart">
                 <a class="product-card-link" href="product.html">
                   <img class="product-card-img"  src="images/catalog/catalog-2.jpg" width="300" height="212" alt="Виллы в Поко Диабло">
+                  <h3 class="product-card-title">Villas at Poco Diablo</h3>
                 </a>
-                <h3 class="product-card-title">Villas at Poco Diablo</h3>
                 <span class="product-card-type">Гостиница</span>
                 <span class="product-card-price">От 5000 ₽</span>
                 <a href="#" class="button-detailed">Подробнее</a>
@@ -229,8 +259,8 @@
               <li class="product-cart">
                 <a class="product-card-link" href="product.html">
                   <img class="product-card-img"  src="images/catalog/catalog-3.jpg" width="300" height="212" alt="Гостиница Пустынный перепел">
+                  <h3 class="product-card-title">Desert Quail Inn</h3>
                 </a>
-                <h3 class="product-card-title">Desert Quail Inn</h3>
                 <span class="product-card-type">Гостиница</span>
                 <span class="product-card-price">От 2500 ₽</span>
                 <a href="#" class="button-detailed">Подробнее</a>
@@ -253,8 +283,8 @@
               <li class="product-cart">
                 <a class="product-card-link" href="product.html">
                   <img class="product-card-img"  src="images/catalog/catalog-4.jpg" width="300" height="212" alt="Гостиница Гринтри Инн">
+                  <h3 class="product-card-title">GreenTree Inn</h3>
                 </a>
-                <h3 class="product-card-title">GreenTree Inn</h3>
                 <span class="product-card-type">Гостиница</span>
                 <span class="product-card-price">От 1500 ₽</span>
                 <a href="#" class="button-detailed">Подробнее</a>
