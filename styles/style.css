@@ -1010,18 +1010,7 @@ body {
 
 
 
-/* .select-icon {
-  content: "";
-  position: absolute;
-  fill: #000000;
-  top: 19px;
-  right: 0;
-  bottom: 0;
-  left: 260px;
-  width: 12px;
-  height: 11px;
 
-} */
 
 .select-control:hover {
   border: 2px solid #68A2CA;
@@ -1504,7 +1493,10 @@ body {
 
 .main-footer-phone:hover {
   color: #756157;
+
 }
+
+
 
 .main-footer-phone:focus {
   color: #756157;
@@ -1516,6 +1508,15 @@ body {
 }
 
 
+.main-footer-school:hover {
+  fill: #756157;
+}
+
+
+
+.main-footer-school:focus .link-icon  {
+  fill: rgba(117, 97, 87, 1);
+}
 
 .link-icon {
   fill: #000;
@@ -1531,9 +1532,13 @@ body {
 
 .link-icon:active {
   fill: #756157;
+}
+
+.link-icon:active {
+  fill: #756157;
   opacity: 0.3;
 }
-/* main-footer */
+/* main-footer
 
 /* mailing bg-hidden */
 .bg-hidden {
