@@ -126,6 +126,7 @@ body {
   color: #000000;
   text-decoration: none;
   display: block;
+  position: relative;
 
 }
 
@@ -134,21 +135,23 @@ body {
 }
 
 .link-current {
-  position: relative;
+
   display: inline-block;
 }
 
-.link-current::after {
+.link-current::before {
   content: "";
   position: absolute;
-  background: #756257;
-  top: 43px;
-  left: 0;
-  width: 100%;
   height: 2px;
+  bottom: -1px;
+  left: 16px;
+  right: 16px;
+  z-index: 1;
+  background-color: #756257;
 }
 
-.list-wrap .navigation-item {
+
+.list-wrap .navigation-link {
   padding: 20px 16px 20px;
 }
 
