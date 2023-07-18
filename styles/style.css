@@ -1000,13 +1000,17 @@ body {
   padding: 12px 99px 12px 20px;
   font-family: PT Sans;
   appearance: none;
+  background-image: url("..//images/modal/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 94% 49%;
+
 
 
 }
 
 
 
-.select-icon {
+/* .select-icon {
   content: "";
   position: absolute;
   fill: #000000;
@@ -1017,7 +1021,7 @@ body {
   width: 12px;
   height: 11px;
 
-}
+} */
 
 .select-control:hover {
   border: 2px solid #68A2CA;
@@ -1026,6 +1030,12 @@ body {
 .select-control:focus {
   outline: 2px solid #68A2CA;
   border-color: transparent;
+}
+
+.select-control:disabled {
+
+  outline: none;
+  opacity: 0.6;
 }
 
 
